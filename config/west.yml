@@ -16,6 +16,7 @@ manifest:
       revision: main
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar
-      revision: main
+      # main は 2026-02 に ZMK v0.2 対応を削除したため、v0.2.1 でビルドできる最後の世代に固定
+      revision: a3510c9de46de8b42c803286f4978466c6ea3916
   self:
     path: config
